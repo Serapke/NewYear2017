@@ -26,13 +26,17 @@
         <div class="row">
             <div id="input" class="col-md-offset-3 col-md-6">
                 <input class="col-md-11" id="code" type="text" placeholder="Užduoties kodas"/>
-                <button onclick="getHint()" type="submit" class="col-md-1"></button>
+                <button onclick="getHint()" type="submit" class="col-md-1 button"></button>
             </div>
         </div>
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
-                <div class="alert-info">
-                    <p id="hint"></p>
+                <div class="alert-info row">
+                    <p class="col-md-8" id="hint"></p>
+                    <button class="col-md-4" onclick="getAnotherHint()">Reikia dar vienos užuominos?</button>
+                </div>
+                <div class="alert-danger">
+                    <p id="hint2"></p>
                 </div>
             </div>
         </div>
